@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PublicationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('publications', PublicationController::class);
